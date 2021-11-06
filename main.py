@@ -76,10 +76,10 @@ def getGestureNum(test_vector, train_penulLayer):
 
 videofiles = []
 
-video_loc_path=os.path.join('C:\\Users\\prana\\OneDrive\\Documents\\CNN_model\\traindata')
-print(video_loc_path)
-video_path = os.path.join(video_loc_path, "*.mp4")
-videos = glob.glob(video_path)
+#video_loc_path=os.path.join('C:\\Users\\prana\\OneDrive\\Documents\\CNN_model\\traindata')
+#print(video_loc_path)
+#video_path = os.path.join(video_loc_path, "*.mp4")
+videos = glob.glob('traindata/*.mp4')
 videofiles = videos
 print(videos)
 
@@ -105,10 +105,9 @@ getPnultimateLayer(frames_path, filename1)
 # Extract the middle frame of each gesture video
 
 videofiles = []
-video_loc_path=os.path.join('C:\\Users\\prana\\OneDrive\\Documents\\CNN_model\\test')
+
 #video_loc_path = os.path.join(video_loc_path,'\test')
-video_path = os.path.join(video_loc_path, "*.mp4")
-videos = glob.glob(video_path)
+videos = glob.glob('test/*.mp4')
 videofiles = videos
 
 count = 0
